@@ -6,7 +6,9 @@
     <title>Namaste React</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <!-- <h1>Hello World!</h1> -->
+
+    <div id="root"></div>
 
     <script
       crossorigin
@@ -16,5 +18,13 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
+
+
+    <script>
+      const heading = React.createElement("h1", {}, "Hello Rupendra, Dreams come true.")
+      const root = ReactDOM.createRoot(document.getElementById("root"))
+
+      root.render(heading)
+    </script>
   </body>
 </html>
