@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Namaste React</title>
-
+    <link rel="stylesheet" href="./index.css">
     <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
@@ -18,20 +18,8 @@
     <!-- <h1>Hello World!</h1> -->
 
     <div id="root"></div>
-    <script>
-      const heading1 = React.createElement("h1", {className: "heading1"}, "Thi is Heading1.")
-      const para1 = React.createElement("p", {className: "para1"}, "This is Para1")
-      const container1 = React.createElement("div", {className: "container1"}, heading1, para1)
-
-      const heading2 = React.createElement("h1", {className: "heading2"}, "This is Heading2.")
-      const para2 = React.createElement("h2", {className: "para2"}, "This is Para2.")
-      const container2 = React.createElement("div", {className: "container2"}, heading2, para2)
-
-      const container = React.createElement("div", {className: "container"}, container1, container2)
-
-      const root = ReactDOM.createRoot(document.getElementById("root"))
-      root.render(container)
-
+    <script src="./app.js">
+      
     </script>
   </body>
 </html>
